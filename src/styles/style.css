@@ -1,0 +1,11 @@
+body .smooth-container {
+  scroll-behavior: smooth
+}
+
+.nav-style {
+  width: 100%;
+}
+
+.col-md-12 {
+  padding: 0 !important;
+}
