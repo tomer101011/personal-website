@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
 import './folder/style.css';
+/* eslint-disable */
 import zenscroll from 'zenscroll';
+/* eslint-enabled */
 
 function App() {
   return (
