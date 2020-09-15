@@ -2,10 +2,40 @@ body .smooth-container {
   scroll-behavior: smooth
 }
 
-.nav-style {
-  width: 100%;
+#section1 {
+  height: 600px;
+  background-color: pink;
 }
 
-.col-md-12 {
-  padding: 0 !important;
+#section2 {
+  height: 600px;
+  background-color: yellow;
+}
+
+.img-style {
+  background-image: url('../pictures/shoe.jpg');
+  width: 100%;
+  height: 800px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  color: #bac964;
 }

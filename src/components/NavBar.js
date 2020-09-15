@@ -2,44 +2,40 @@ import React, { Component } from 'react'
 
 export default class NavBar extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            position: 'relative',
-            backgroundColor: 'transparent'
-        };
-    }
+    // constructor(props) {
+    //     super(props);
+    //     // this.state = {
+    //     //     position: 'relative',
+    //     //     backgroundColor: 'transparent'
+    //     // };
+    // }
 
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-        window.addEventListener('scroll', this.handleNavColor);
-    }
+    componentDidMount = () => {
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (currentScrollPos === 0) {
+                document.getElementById("navbar").style.top = "0";
+                document.getElementById("navbar").style.backgroundColor = "transparent";
 
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-        window.removeEventListener('scroll', this.handleNavColor);
-    }
+            }
+            else if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+                document.getElementById("navbar").style.backgroundColor = "white";
+            }
+            else {
+                document.getElementById("navbar").style.top = "-60px";
+                document.getElementById("navbar").style.backgroundColor = "white";
+            }
 
-    handleScroll = () => {
-        if (window.scrollY <= 200)
-            this.setState({ position: 'relative' });
-        else
-            this.setState({ position: 'fixed' });
-    }
-
-    handleNavColor = () => {
-        if (window.scrollY <= 200) {
-            this.setState({ backgroundColor: 'transparent' });
-        }
-        else {
-            this.setState({ backgroundColor: '#fff' });
+            prevScrollpos = currentScrollPos;
         }
     }
 
     render() {
         return (
-            
-                <nav style={{ position: this.state.position, backgroundColor: this.state.backgroundColor }} className="nav-style navbar navbar-expand-lg site-navbar navbar-light">
+            <div>
+                <nav id="navbar" className="nav-style navbar navbar-expand-lg site-navbar navbar-light">
                     <div className="container">
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -55,7 +51,10 @@ export default class NavBar extends Component {
                         </div>
                     </div>
                 </nav>
-            
+
+                <img className="img-style" src={require(`../pictures/shoe.jpg`)} alt="" />
+            </div>
+
         )
     }
 }
