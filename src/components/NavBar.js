@@ -13,13 +13,9 @@ export default class NavBar extends Component {
     componentDidMount = () => {
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (currentScrollPos === 0) {
-                document.getElementById("navbar").style.top = "0";
-                document.getElementById("navbar").style.backgroundColor = "transparent";
+            let currentScrollPos = window.pageYOffset;
 
-            }
-            else if (prevScrollpos > currentScrollPos) {
+             if (prevScrollpos > currentScrollPos) {
                 document.getElementById("navbar").style.top = "0";
                 document.getElementById("navbar").style.backgroundColor = "white";
             }
