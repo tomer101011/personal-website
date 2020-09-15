@@ -19,7 +19,7 @@ body .smooth-container {
 }
 
 #navbar {
-  background-color: white;
+  background-color: #fff;
   position: fixed;
   top: 0;
   width: 100%;
@@ -28,13 +28,14 @@ body .smooth-container {
 }
 
 #navbar a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 17px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .1em;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  transition: color 0.3s;
 }
 
 #navbar a:hover {
