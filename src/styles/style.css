@@ -2,14 +2,30 @@ body .smooth-container {
   scroll-behavior: smooth
 }
 
-#section1 {
+.section {
   height: 600px;
-  background-color: pink;
+  background-color: #222;
+  padding: 80px 0 80px 0;
 }
 
-#section2 {
-  height: 600px;
-  background-color: yellow;
+.footer-style{
+  background-color: #222;
+  color:white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.pad-list{
+  padding: 15px 20px 15px 20px !important;
+}
+
+.text-header{
+  color:white;
+  font-weight: 200;
+}
+
+.text-important{
+  font-weight: 800;
 }
 
 .img-style {
@@ -20,11 +36,44 @@ body .smooth-container {
 
 .caption {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%,-45%);
+  transform: translate(-50%, -45%);
   color: white;
   text-transform: uppercase;
+}
+
+.head {
+  top: 30%;
+}
+
+@media screen and (max-width: 1100px) {
+  .head {
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .head {
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .head {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .head {
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .head {
+    top: 40%;
+  }
 }
 
 #text1 {

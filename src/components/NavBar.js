@@ -31,11 +31,11 @@ export default class NavBar extends Component {
                     <Navbar.Toggle id="navToggle" aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
-                            <Nav.Link href="">Home</Nav.Link>
-                            <Nav.Link href="#section1">Portfolio</Nav.Link>
-                            <Nav.Link href="#section2">Resume</Nav.Link>
-                            <Nav.Link href="#link">About</Nav.Link>
-                            <Nav.Link href="#link">Contact</Nav.Link>
+                            <Nav.Link className="pad-list" href="">Home</Nav.Link>
+                            <Nav.Link className="pad-list" href="#portfolio">Portfolio</Nav.Link>
+                            <Nav.Link className="pad-list" href="#resume">Resume</Nav.Link>
+                            <Nav.Link className="pad-list" href="#about">About</Nav.Link>
+                            <Nav.Link className="pad-list" href="#contact">Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar >
