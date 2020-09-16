@@ -9,6 +9,8 @@ import './styles/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import NavBar from './components/NavBar.js';
+import Intro from './components/Intro.js';
+
 
 class App extends Component {
 
@@ -17,8 +19,7 @@ class App extends Component {
       <div className="App">
 
         <NavBar />
-
-        <img className="img-style" src={require(`./pictures/shoe.jpg`)} alt="" />
+        <Intro/>
 
         <div className="main" id="section1">
           <h2>Section 1</h2>

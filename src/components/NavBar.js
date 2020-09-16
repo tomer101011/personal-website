@@ -18,8 +18,7 @@ export default class NavBar extends Component {
                 document.getElementById("navbar").style.top = "0";
 
             else
-                document.getElementById("navbar").style.top = "-100px";
-
+                document.getElementById("navbar").style.top = "-800px";
 
             prevScrollpos = currentScrollPos;
         }
@@ -27,18 +26,20 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <Navbar id="navbar" expand="lg">
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto mx-auto">
-                        <Nav.Link href="#section1">Section 1</Nav.Link>
-                        <Nav.Link href="#section2">Section 2</Nav.Link>
-                        <Nav.Link href="#link">Resume</Nav.Link>
-                        <Nav.Link href="#link">About</Nav.Link>
-                        <Nav.Link href="#link">Contact</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <div>
+                <Navbar id="navbar" expand="lg">
+                    <Navbar.Toggle id="navToggle" aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mx-auto">
+                            <Nav.Link href="">Home</Nav.Link>
+                            <Nav.Link href="#section1">Portfolio</Nav.Link>
+                            <Nav.Link href="#section2">Resume</Nav.Link>
+                            <Nav.Link href="#link">About</Nav.Link>
+                            <Nav.Link href="#link">Contact</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar >
+            </div>
         )
     }
 }
