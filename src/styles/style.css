@@ -4,12 +4,10 @@ body .smooth-container {
 
 .section {
   height: 600px;
-  background-color: #222;
   padding: 80px 0 80px 0;
 }
 
 .footer-style{
-  background-color: #222;
   color:white;
   font-size: 40px;
   font-weight: bold;
