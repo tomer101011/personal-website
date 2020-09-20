@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.58dcf912.chunk.css",
+    "main.css": "/personal-website/static/css/main.4b63b9a0.chunk.css",
     "main.js": "/personal-website/static/js/main.c03f0d96.chunk.js",
     "main.js.map": "/personal-website/static/js/main.c03f0d96.chunk.js.map",
     "runtime-main.js": "/personal-website/static/js/runtime-main.3731dab7.js",
@@ -9,10 +9,10 @@
     "static/js/2.df9d575a.chunk.js": "/personal-website/static/js/2.df9d575a.chunk.js",
     "static/js/2.df9d575a.chunk.js.map": "/personal-website/static/js/2.df9d575a.chunk.js.map",
     "index.html": "/personal-website/index.html",
-    "precache-manifest.0a452b48df0ae8c77e22dd4b1945e5c6.js": "/personal-website/precache-manifest.0a452b48df0ae8c77e22dd4b1945e5c6.js",
+    "precache-manifest.94fa383c8a8ceee04070ca4c2c4104f3.js": "/personal-website/precache-manifest.94fa383c8a8ceee04070ca4c2c4104f3.js",
     "service-worker.js": "/personal-website/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/personal-website/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.58dcf912.chunk.css.map": "/personal-website/static/css/main.58dcf912.chunk.css.map",
+    "static/css/main.4b63b9a0.chunk.css.map": "/personal-website/static/css/main.4b63b9a0.chunk.css.map",
     "static/js/2.df9d575a.chunk.js.LICENSE.txt": "/personal-website/static/js/2.df9d575a.chunk.js.LICENSE.txt",
     "static/media/shoe.jpg": "/personal-website/static/media/shoe.d2290058.jpg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.3731dab7.js",
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.df9d575a.chunk.js",
-    "static/css/main.58dcf912.chunk.css",
+    "static/css/main.4b63b9a0.chunk.css",
     "static/js/main.c03f0d96.chunk.js"
   ]
 }
